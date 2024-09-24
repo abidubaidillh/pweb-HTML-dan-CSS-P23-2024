@@ -1,3 +1,44 @@
 a {
     text-decoration: none;
 }
+
+ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
+    margin: 0 auto 0 auto; 
+    color: #0f0f0f;
+}
+
+
+.nav-button {
+    color: #0f0f0f;
+    border: none;
+    padding: 35px 0;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nav-title {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#home {
+    width: 100%;
+    text-align: center;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    padding: 30px;
+}
+
+#home > a {
+    color: #f0f0f0;
+}
+
+footer {
+    text-align: right;
+    margin-top: 50px;
+}
