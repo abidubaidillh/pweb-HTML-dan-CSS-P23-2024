@@ -3,17 +3,22 @@ a {
 }
 
 ul {
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     text-align: center;
     margin: 0 auto 0 auto; 
-    color: #0f0f0f;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+#nav-bar {
+    background-color: #3ebd02;
+    font-weight: bold;
+}
 
 .nav-button {
-    color: #0f0f0f;
+    color: #f0f0f0;
     border: none;
     padding: 35px 0;
     text-decoration: none;
@@ -27,18 +32,33 @@ ul {
 }
 
 #home {
-    width: 100%;
+    width: auto;
     text-align: center;
-    background-color: #0f0f0f;
-    color: #f0f0f0;
+    background-color: #143D01;
+    color: #3ebd02;
     padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #home > a {
+    border-radius: 16px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    background-color: #3ebd02;
+    color: #143D01;
+    font-weight: bold;
+}
+
+#home > a:hover {
+    background-color: #cb3b1c;
     color: #f0f0f0;
 }
 
 footer {
     text-align: right;
-    margin-top: 50px;
+    margin: 50px 30px 0 0;
+}
+
+footer > a {
+    color: #0f0f0f;
 }
