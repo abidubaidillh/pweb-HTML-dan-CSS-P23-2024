@@ -1,3 +1,7 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -9,7 +13,6 @@ ul {
     text-align: center;
     margin: 0 auto 0 auto; 
     color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -36,7 +39,6 @@ nav {
     background-color: #143D01;
     color: #3ebd02;
     padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #home > a {
@@ -54,10 +56,15 @@ nav {
 }
 
 footer {
-    text-align: right;
-    margin: 50px 30px 0 0;
+    width: 100%;
+    background-color: #3ebd02;
+    text-align: left;
+    margin: auto;
+    padding: 30px 0;
 }
 
 footer > a {
-    color: #0f0f0f;
+    color: #f0f0f0;
+    font-weight: bold;
+    margin-left: 30px;
 }
