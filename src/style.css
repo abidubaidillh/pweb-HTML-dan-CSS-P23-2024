@@ -9,7 +9,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-y: scroll;
+    overflow-y: none;
     overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ div {
     background-color: #f0f0f0;
     color: #3ebd02;
     padding: 30px;
-    min-height: 500px;
+    min-height: 455px;
 }
 
 a {
@@ -43,30 +43,29 @@ nav {
 }
 
 h2 {
-    font-size: 150%;
+    font-size: auto;
 }
 
 nav > ul > a {
-    background-color: #36a602;
     color: #f0f0f0;
     margin: 5px 5px 5px 5px;
+    text-align: center;
     padding: 10px;
     border: none;
     padding: 35px 0;
     text-decoration: none;
-    font-size: 16px;
+    font-size: auto;
     cursor: pointer;
     border-radius: 50px 50px 50px 50px;
 }
 
-nav ul a:hover {
-    background-color: #f0f0f0; /* Warna latar saat hover */
-    color: #3ebd02; /* Warna teks saat hover */
+nav > ul > a:hover {
+    color: #cb3b1c;
 }
 
 #nav-title {
     grid-column: 7/8;
-    font-size: auto;
+    font-size: xx-large;
     margin: auto;
 }
 
