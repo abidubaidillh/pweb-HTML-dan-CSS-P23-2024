@@ -1,27 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>WELCOME</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<nav>
-    <ul>
-        <a href="index.html" class="nav-button">Home</a>
-        <a href="produk.html" class="nav-button">Product</a>
-        <a href="katalog.html" class="nav-button">Catalog</a>
-        <a href="galeri.html" class="nav-button">Gallery</a>
-        <a href="testimoni.html" class="nav-button">Testimonial </a>
-        <h1 class="title" id="nav-title">TOKOTOK</h1>
-    </ul>
-</nav>
-<body>
-    <div id="home">
-        <h2 class="title" style="margin-bottom: 0;">JUDUL</h2>
-        <p style="margin: 1px 0 30px 0;">catchphrase</p>
-        <a href="produk.html">LIHAT PENAWARAN</a>
-    </div>
-</body>
-<footer>
-    <a href="tel:082232005560">CONTACT US</a>
-</footer>
+    <head>
+        <title>WELCOME</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #home {
+                margin: 50px;
+                width: auto;
+                text-align: center;
+                background-color: #f0f0f0;
+                color: #3ebd02;
+                padding: 30px;
+            }
+
+            div {
+                text-align: center;
+                width: 1fr;
+                margin: 30px;
+                background-color: #f0f0f0;
+                color: #3ebd02;
+                padding: 30px;
+            }
+
+            #h-catalog > ul {
+                width: 98%;
+                align-items: center;
+                list-style-type: none;
+                display: grid;
+                float: left;
+                text-align: center;
+                margin: 0 0 30px 0; 
+                font-weight: 700;
+            }
+
+            #h-catalog > ul > li > a {
+                color: #3ebd02;
+            }
+
+            #h-catalog > ul > li {
+                padding: 10px 0;
+            }
+
+            #h-catalog > ul > li > img {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <nav>
+        <ul>
+            <a href="index.html">Beranda</a>
+            <a href="produk.html">Produk</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="testimoni.html">Ulasan</a>
+            <h1 class="title" id="nav-title">TOKOTOK</h1>
+        </ul>
+    </nav>
+    <body>
+        <div id="home">
+            <h2 class="title" style="margin-bottom: 0;">TREND OUTFIT KITA</h2>
+            <p style="margin: 1px 0 30px 0;">outfit trendy, harga friendly</p>
+            <a href="produk.html" class="custom-button">LIHAT PENAWARAN</a>
+        </div>
+        <div id="h-product">
+            <h2 class="title">PRODUK TERBARU</h2>
+        </div>
+        <div id="h-catalog">
+            <h2 class="title">KATALOG</h2>
+            <ul style="overflow-x: scroll; overflow-y: hidden;">
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Koleksi 1</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Koleksi 2</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Koleksi 3</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Koleksi 4</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Koleksi 5</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Koleksi 6</a>
+                </li>
+            </ul>
+            <a href="katalog.html" class="custom-button">LAINNYA</a>
+        </div>
+    </body>
+    <footer>
+        <a href="tel:082232005560">CONTACT US</a>
+    </footer>
 </html>

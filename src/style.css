@@ -1,5 +1,14 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 a {
@@ -7,11 +16,11 @@ a {
 }
 
 ul {
-    width: 95%;
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     text-align: center;
-    margin: 0 auto 0 auto; 
+    margin: 0; 
     color: #f0f0f0;
 }
 
@@ -20,7 +29,11 @@ nav {
     font-weight: bold;
 }
 
-.nav-button {
+h2 {
+    font-size: 150%;
+}
+
+nav > ul > a {
     color: #f0f0f0;
     border: none;
     padding: 35px 0;
@@ -30,33 +43,31 @@ nav {
 }
 
 #nav-title {
+    grid-column: 7/8;
+    font-size: auto;
     margin: auto;
 }
 
-#home {
-    width: auto;
-    text-align: center;
-    background-color: #f0f0f0;
-    color: #3ebd02;
-    padding: 30px;
+.title {
+    font-size: auto;
 }
 
-#home > a {
-    border-radius: 16px;
+.custom-button {
+    font-size: 85%;
+    border-radius: 8px;
     text-align: center;
     padding: 10px 10px 10px 10px;
     background-color: #3ebd02;
     color: #f0f0f0;
     font-weight: bold;
 }
-
-#home > a:hover {
+.custom-button:hover {
     background-color: #cb3b1c;
     color: #f0f0f0;
 }
 
 footer {
-    width: 100%;
+    width: auto;
     background-color: #3ebd02;
     text-align: left;
     margin: auto;
@@ -65,6 +76,7 @@ footer {
 
 footer > a {
     color: #f0f0f0;
-    font-weight: bold;
     margin-left: 30px;
+    font-size: small;
+    font-weight: bold;
 }
