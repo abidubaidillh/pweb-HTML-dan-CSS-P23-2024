@@ -36,7 +36,7 @@ nav {
 #home {
     width: auto;
     text-align: center;
-    background-color: #143D01;
+    background-color: #f0f0f0;
     color: #3ebd02;
     padding: 30px;
 }
@@ -46,7 +46,7 @@ nav {
     text-align: center;
     padding: 10px 10px 10px 10px;
     background-color: #3ebd02;
-    color: #143D01;
+    color: #f0f0f0;
     font-weight: bold;
 }
 
