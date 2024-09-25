@@ -102,3 +102,46 @@ footer > a {
     font-size: medium;
     font-weight: bold;
 }
+
+/* TESTIMONIAL DESIGN */
+/* Container testimonial menggunakan grid */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ukuran minimal kartu */
+    gap: 15px; /* Jarak antar kartu */
+    padding: 15px;
+}
+
+/* Gaya untuk setiap kartu testimonial yang lebih kecil */
+.testimonial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Border-radius diperkecil */
+    padding: 10px; /* Padding dalam kartu diperkecil */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Bayangan yang sedikit lebih kecil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 30px; /* Tinggi minimum kartu untuk 1-2 kalimat */
+}
+
+/* Efek hover tetap ada, tapi lebih kecil */
+.testimonial-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Nama pengulas */
+.testimonial-card h3 {
+    margin-bottom: 5px; /* Mengurangi jarak antara nama dan ulasan */
+    font-size: 16px; /* Ukuran font diperkecil */
+    color: #007bff;
+}
+
+/* Teks ulasan */
+.testimonial-card p {
+    font-size: 14px; /* Ukuran font diperkecil */
+    color: #555;
+    font-style: italic;
+    margin: 0; /* Menghilangkan margin untuk ulasan */
+}
+
+
