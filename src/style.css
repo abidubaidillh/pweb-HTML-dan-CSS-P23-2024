@@ -13,6 +13,15 @@ body {
     overflow-x: hidden;
 }
 
+div {
+    width: 1fr;
+    margin: 30px;
+    background-color: #f0f0f0;
+    color: #3ebd02;
+    padding: 30px;
+    min-height: 500px;
+}
+
 a {
     text-decoration: none;
 }
