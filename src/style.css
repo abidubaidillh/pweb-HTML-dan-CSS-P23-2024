@@ -49,6 +49,7 @@ h2 {
 nav > ul > a {
     color: #f0f0f0;
     margin: 5px 5px 5px 5px;
+    text-align: center;
     padding: 10px;
     border: none;
     padding: 35px 0;
@@ -56,6 +57,10 @@ nav > ul > a {
     font-size: auto;
     cursor: pointer;
     border-radius: 50px 50px 50px 50px;
+}
+
+nav > ul > a:hover {
+    color: #cb3b1c;
 }
 
 #nav-title {
