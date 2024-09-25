@@ -1,5 +1,5 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     background-color: #f0f0f0;
     padding: 0%;
     width: 100%;
@@ -116,32 +116,29 @@ footer > a {
 .testimonial-card {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px; /* Border-radius diperkecil */
-    padding: 10px; /* Padding dalam kartu diperkecil */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Bayangan yang sedikit lebih kecil */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 30px; /* Tinggi minimum kartu untuk 1-2 kalimat */
+    min-height: 30px;
 }
 
-/* Efek hover tetap ada, tapi lebih kecil */
 .testimonial-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Nama pengulas */
 .testimonial-card h3 {
-    margin-bottom: 5px; /* Mengurangi jarak antara nama dan ulasan */
-    font-size: 16px; /* Ukuran font diperkecil */
-    color: #007bff;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #cb3b1c;
 }
 
-/* Teks ulasan */
 .testimonial-card p {
-    font-size: 14px; /* Ukuran font diperkecil */
+    font-size: 14px;
     color: #555;
     font-style: italic;
-    margin: 0; /* Menghilangkan margin untuk ulasan */
+    margin: 0;
 }
 
 .testimonial-container img {
@@ -195,6 +192,7 @@ button {
 button:hover {
     background-color: #0056b3; /* Warna lebih gelap saat hover */
 }
+/* TESTIMONIAL DESIGN END */
 
 /* ini katalog */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
@@ -213,14 +211,13 @@ body {
 }
 
 header {
-    background-color: #3ebd02;
-    color: #fff;
+    background-color: #f0f0f0;
+    color: #3ebd02;
     text-align: center;
     padding: 2rem 0;
 }
 
 .title {
-    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
@@ -249,7 +246,6 @@ main {
 }
 
 .product-details h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     height: fit-content;
@@ -341,7 +337,7 @@ main {
 footer {
     background-color: #3ebd02;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 1rem 0;
 }
 
@@ -361,4 +357,4 @@ footer a {
     .product-details, .product-image {
         width: 100%;
     }
-}
+}  
