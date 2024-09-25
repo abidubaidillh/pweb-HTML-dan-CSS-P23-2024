@@ -1,26 +1,63 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>CATALOG</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <nav>
-        <ul>
-            <a href="index.html">Beranda</a>
-            <a href="produk.html">Produk</a>
-            <a href="katalog.html">Katalog</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="testimoni.html">Ulasan</a>
-            <h1 class="title" id="nav-title">TOKOTOK</h1>
-        </ul>
-    </nav>
-    <body>
-        <div>
-            <h1 class="title">Katalog</h1>
-            <p>Koleksi produk yang tersedia di toko</p>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <nav>
+    <ul>
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="katalog.html">Katalog</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="testimoni.html">Ulasan</a>
+      <h1 class="title" id="nav-title">TOKOTOK</h1>
+    </ul>
+  </nav>
+  <body>
+    <header>
+      <h1 id="katalog" class="title">Katalog</h1>
+      <p>Koleksi produk yang tersedia di toko</p>
+    </header>
+
+    <main id="container">
+      <section class="product">
+        <div class="product-details">
+          <h2>PlayStation 5</h2>
+          <div class="rating">
+            <span class="hint-star star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <p class="description">
+            PlayStation 5, konsol game generasi terbaru dari Sony dengan performa tinggi dan grafis memukau.
+          </p>
+          <div class="control">
+            <button class="btn">
+              <span class="price">Rp. 10.000.000</span>
+              <span class="shopping-cart"><i class="fa fa-shopping-cart"></i></span>
+              <span class="buy">Beli Sekarang</span>
+            </button>
+          </div>
         </div>
-    </body>
+        <div class="product-image">
+          <img src="../img/ps5.jpeg" alt="PlayStation 5">
+          <div class="info">
+            <h3>Spesifikasi PlayStation 5</h3>
+            <ul>
+              <li>Chipset: AMD Ryzen</li>
+              <li>GPU: AMD RDNA 2</li>
+              <li>RAM: 16GB GDDR6</li>
+              <li>Storage: 825GB SSD</li>
+              <li>Resolusi: Hingga 8K</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-        <a href="tel:+62 822-3200-5560">CONTACT US</a>
+      <a href="tel:+62 822-3200-5560">HUBUNGI KAMI</a>
     </footer>
+  </body>
 </html>
