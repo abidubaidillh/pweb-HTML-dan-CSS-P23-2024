@@ -349,13 +349,3 @@ footer a {
 }
 
 /* End of catalog */
-
-@media (max-width: 768px) {
-    .product {
-        flex-direction: column;
-    }
-
-    .product-details, .product-image {
-        width: 100%;
-    }
-}  
