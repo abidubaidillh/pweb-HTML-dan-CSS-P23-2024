@@ -190,7 +190,7 @@ footer > a {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #3ebd02;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -200,7 +200,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Warna lebih gelap saat hover */
+  background-color: #cb3b1c; /* Warna lebih gelap saat hover */
 }
 /* TESTIMONIAL DESIGN END */
 
@@ -346,10 +346,10 @@ main {
 }
 
 footer {
+  width: 100%S;
   background-color: #3ebd02;
   color: #fff;
   text-align: left;
-  padding: 1rem 0;
 }
 
 footer a {

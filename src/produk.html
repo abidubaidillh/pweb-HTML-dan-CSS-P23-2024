@@ -3,6 +3,75 @@
     <head>
         <title>PRODUCTS</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            #filter-container {
+                border: none;
+                border-radius: 16px;
+                padding: 20px;
+                background-color: white;;
+            }
+
+            #filter-container > select {
+                border-radius: 8px;
+                padding: 2px;
+                margin: 8px;
+            }
+
+            #filter-container > input {
+                border: solid 1px;
+                border-radius: 8px;
+                padding: 2px;
+                margin: 8px;
+            }
+
+            #filter-button {
+                border-radius: 8px;
+                background-color: #3ebd02;
+                color: white;
+                font-weight: 700;
+            }
+
+            #filter-button:hover {
+                background-color: #cb3b1c;
+                color: white;
+            }
+
+            
+            #products-container {
+                width: 98%;
+                align-items: center;
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                text-align: center;
+                margin: 0 0 30px 0;
+                font-weight: 700;
+            }
+
+            #products-container > li > img {
+                border-radius: 8px;
+            }
+
+            #products-container > li {
+                padding: 10px 0;
+                border: none;
+                border-radius: 16px;
+                padding: 20px;
+                background-color: white;
+                margin: 5px;
+            }
+
+            #products-container > li > a {
+                text-decoration: none;
+                color: #3ebd02;
+                margin: 20px;
+            }
+
+            #page-button {
+                text-align: center;
+                text-decoration: none;
+            }
+        </style>
     </head>
     <nav>
         <ul>
@@ -17,10 +86,68 @@
     <body>
         <div>
             <h2 style="font-size: 32px;">PRODUK</h2>
-            <input type="text" placeholder="cari produk..">
+        </div>
+        <div>
+            <form action="/submit" method="get">
+                <fieldset id="filter-container">
+                    <h3>FILTER</h3><br>
+                    <label>KATEGORI</label>
+                    <select>
+                        <option value="1">Semua</option>
+                        <option value="2">Gaming</option>
+                        <option value="3">Streaming</option>
+                        <option value="4">Recording</option>
+                        <option value="5">Merchendise</option>
+                    </select>
+                    <label>URUTKAN</label>
+                    <select>
+                        <option value="1">Terpopuler</option>
+                        <option value="2">Harga Terendah</option>
+                        <option value="3">Harga Tertinggi</option>
+                        <option value="4">Terbaru</option>
+                        <option value="5">Terlama</option>
+                    </select>
+                    <input type="text" placeholder="cari produk..">
+                    <button type="submit" id="filter-button">CARI</button>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <ul id="products-container">
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Produk 1</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Produk 2</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Produk 3</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Produk 4</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Produk 5</a>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300">
+                    <a href="produk.html">Produk 6</a>
+                </li>
+            </ul>
+        </div>
+        <div id="page-button">
+            <a href="#" class="previous round" style="margin-right: 20px;">&#8249;</a>
+            <a href="#" class="previous" style="margin-right: 20px;">&laquo;</a>
+            <a href="#" class="next" style="margin-left: 20px;">&raquo;</a>
+            <a href="#" class="next round" style="margin-left: 20px;">&#8250;</a>
         </div>
     </body>
     <footer>
-        <a href="tel:+62 822-3200-5560">HUBUNGI KAMI</a>
+        <a href="tel:+62 822-3200-5560">LAYANAN PELANGGAN</a>
     </footer>
 </html>
