@@ -346,10 +346,11 @@ main {
 }
 
 footer {
-  width: 100%S;
+  width: 100%git ;
   background-color: #3ebd02;
   color: #fff;
   text-align: left;
+  height: 100px;
 }
 
 footer a {
