@@ -23,9 +23,9 @@ div {
 }
 
 .index-catalog-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 a {
@@ -367,29 +367,33 @@ footer a {
 }
 
 .galeri body {
-  min-height:100vh;
-  display:grid;
-  place-content:start center;
-  background:linear-gradient(#fff,#aaa,#fff)
+  min-height: 100vh;
+  display: grid;
+  place-content: start center;
+  background: linear-gradient(#fff, #aaa, #fff);
 }
 
 .galeri article {
-  position:absolute; top:20vh; left:30vw;
-  width:40vw;
-  color:#333;
-  h1, p {
-    margin:10px;
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+  width: 40vw;
+  color: #333;
+  h1,
+  p {
+    margin: 10px;
   }
   h1 {
-    font-size:1.2rem;
+    font-size: 1.2rem;
   }
   p {
-    font-size:0.9rem;
-    line-height:1.4;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
 
-.galeri article h1, .galeri article p {
+.galeri article h1,
+.galeri article p {
   margin: 10px;
 }
 
@@ -403,7 +407,7 @@ footer a {
 }
 
 .galeri {
-  width: auto; 
+  width: auto;
   height: 90vh;
   display: grid;
   grid-auto-flow: column;
@@ -459,7 +463,8 @@ footer a {
   transition: clip-path 0.3s ease-in;
 }
 
-.galeri a:hover img, .galeri a img:hover {
+.galeri a:hover img,
+.galeri a img:hover {
   clip-path: polygon(
     50% 0,
     0 0,
@@ -480,7 +485,6 @@ footer a {
   filter: blur(100px);
 }
 
-
 footer {
   background-color: #3ebd02;
   color: #fff;
@@ -494,7 +498,6 @@ footer a {
   font-weight: bold;
 }
 
-  
 /* Phone screen (max-width: 480px) */
 @media only screen and (max-width: 480px) {
   body {
