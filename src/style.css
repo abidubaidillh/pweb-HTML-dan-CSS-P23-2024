@@ -349,3 +349,53 @@ footer a {
 }
 
 /* End of catalog */
+
+/* Phone screen (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .product {
+        max-width: 100%;
+        margin: 1rem auto;
+        box-shadow: none;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-details {
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    .info {
+        padding: 0.5rem;
+        font-size: 0.9rem; 
+        max-width: object-fit;
+        font-size: small;
+    }
+
+    .info h3 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav > ul {
+        display: block; 
+        text-align: left; 
+    }
+}
