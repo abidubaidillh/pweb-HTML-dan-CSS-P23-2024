@@ -1,0 +1,129 @@
+/* TESTIMONIAL DESIGN */
+/* Container testimonial menggunakan grid */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ukuran minimal kartu */
+    gap: 20px; /* Jarak antar kartu */
+    padding: 20px;
+}
+
+/* Gaya untuk setiap kartu testimonial yang lebih kecil */
+.testimonial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 300px; /* Increased height for better layout */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card h3 {
+    margin-bottom: 5px; /* Decreased margin for h3 */
+    font-size: 18px;
+    color: #cb3b1c;
+    font-weight: bold;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    margin: 10px 0; /* Margin for testimonial text */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Reduced spacing between rating and testimonial text */
+    margin-top: 3px;
+    padding: 3px 5px 3px 5px;
+}
+
+.rating input {
+    display: none; /* Hide the radio buttons */
+}
+
+.star {
+    font-size: 24px; /* Increased size for better visibility */
+    color: #f0c14b; /* Color for filled stars */
+    cursor: pointer;
+    margin-right: 5px; /* Adjusted spacing between stars */
+}
+
+.rating input:checked ~ .star {
+    color: #cb3b1c; /* Color for selected stars */
+}
+
+.testimonial-container img {
+    width: 80px; /* Adjusted for better proportion */
+    height: 80px; /* Adjusted for better proportion */
+    margin: 10px 5px; /* Reduced margin for better alignment */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+footer {
+    background-color: #3ebd02;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer > a {
+    color: #f0f0f0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.testimonial-form {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 30px; /* Space between testimonials and form */
+}
+
+.testimonial-form h2 {
+    margin-bottom: 15px; /* Space below the heading */
+    color: #3ebd02; /* Consistent color with theme */
+}
+
+.form-group {
+    background-color: #fff;
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ddd; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #3ebd02; /* Button background */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #cb3b1c; /* Darker color on hover */
+}
+
+/* TESTIMONIAL DESIGN END */
