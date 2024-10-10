@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Produk</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap");
 
@@ -81,7 +82,9 @@
       }
 
       .product-image img {
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
         height: auto;
         object-fit: cover;
         transition: transform 0.3s ease;
@@ -167,82 +170,55 @@
       <h1 id="katalog" class="title">Katalog</h1>
       <p>Koleksi produk yang tersedia di toko</p>
     </header>
-
     <main id="container">
-      <!-- Product 1 -->
-      <section class="product">
-        <div class="product-details">
-          <h2><a href="ps5.html">PlayStation 5</a></h2>
-          <div class="product-image">
-            <img src="../img/ps5.jpg" alt="PlayStation 5">
-            <div class="info">
-              <h3>Spesifikasi PlayStation 5</h3>
-              <ul>
-                <li>Chipset: AMD Ryzen</li>
-                <li>GPU: AMD RDNA 2</li>
-                <li>RAM: 16GB GDDR6</li>
-                <li>Storage: 825GB SSD</li>
-                <li>Resolusi: Hingga 8K</li>
-              </ul>
-            </div>
-          </div>
-          <div class="rating">
-            <span class="hint-star star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-          <p class="description">
-            PlayStation 5, konsol game generasi terbaru dari Sony dengan performa tinggi dan grafis memukau.
-            Ditenagai oleh CPU AMD Zen 2 delapan inti dan GPU AMD RDNA 2, PS5 menawarkan performa tinggi dengan dukungan resolusi hingga 4K pada 120fps. Konsol ini juga dilengkapi dengan SSD ultra-cepat yang secara signifikan mengurangi waktu loading. Desainnya yang futuristik dan kontroler DualSense yang inovatif, dengan fitur haptic feedback dan adaptive triggers, memberikan pengalaman bermain yang lebih imersif
-          </p>
-          <div class="control">
-            <button class="btn">
-              <span class="price">Rp. 10.000.000</span>
-              <span class="shopping-cart"><i class="fa fa-shopping-cart"></i></span>
-            </button>
-            <button class="btn">
-                <span class="buy">Beli Sekarang</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-            <!-- Product 2 -->
-            <section class="product">
-              <div class="product-details">
-                <h2><a href="xboxseriesx.html">XBox Series X</a></h2>
-                <div class="product-image">
-                  <img src="https://rondea.com/wp-content/uploads/2020/11/81202-video-review-of-the-xbox-series-x.jpg" alt="Xbox Series X">
-                  <div class="info">
-                    <h3>Spesifikasi Xbox Series X</h3>
-                    <ul>
-                      <li>Chipset: AMD Ryzen</li>
-                      <li>GPU: AMD RDNA 2</li>
-                      <li>RAM: 16GB GDDR6</li>
-                      <li>Storage: 1TB SSD</li>
-                      <li>Resolusi: Hingga 8K</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="rating">
-                  <span class="hint-star star">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                </div>
-                <p class="description">
-                  Xbox Series X adalah konsol game generasi terbaru dari Microsoft, dilengkapi dengan kinerja tinggi untuk game 4K dan SSD 1TB untuk loading cepat.
-                </p>
-                <div class="control">
-                  <button class="btn">
-                    <span class="price">Rp. 9.500.000</span>
-                    <span class="shopping-cart"><i class="fa fa-shopping-cart"></i></span>
-                  </button>
-                  <button class="btn">
-                      <span class="buy">Beli Sekarang</span>
-                  </button>
-                </div>
-              </div>
-            </section>
     </main>
-
     <footer>
       <a href="tel:+62 822-3200-5560">LAYANAN PELANGGAN</a>
     </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('https://dummyjson.com/products')
+        .then(response => response.json())
+        .then(data => {
+          const container = document.getElementById('container');
+          data.products.forEach(product => {
+            const productSection = document.createElement('section');
+            productSection.className = 'product';
+
+            productSection.innerHTML = `
+              <div class="product-details">
+                <div class="product-image">
+                  <img src="${product.thumbnail}" alt="${product.title}">
+                  <div class="info">
+                    <h3>${product.title}</h3>
+                    <ul>
+                      <li>Brand: ${product.brand}</li>
+                      <li>Category: ${product.category}</li>
+                      <li>Price: $${product.price}</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rating">
+                  ${'★'.repeat(product.rating)}${'☆'.repeat(5 - product.rating)}
+                </div>
+                <p class="description">${product.description}</p>
+                <div class="control">
+                  <button class="btn">
+                    <span class="price">$${product.price}</span>
+                    <span class="shopping-cart"><i class="fa fa-shopping-cart"></i></span>
+                  </button>
+                  <button class="btn">
+                    <span class="buy">Buy Now</span>
+                  </button>
+                </div>
+              </div>
+            `;
+
+            container.appendChild(productSection);
+          });
+        })
+        .catch(error => console.error('Error fetching products:', error));
+    });
+  </script>
 </html>

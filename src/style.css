@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+nav > ul {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
