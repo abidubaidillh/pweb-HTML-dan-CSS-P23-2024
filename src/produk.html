@@ -108,6 +108,10 @@
                 text-align: center;
                 text-decoration: none;
             }
+
+            #page-button > a:hover {
+                cursor: pointer;
+            }
         </style>
     </head>
     <nav>
@@ -127,64 +131,30 @@
                     <fieldset id="filter-container">
                         <h2>FILTER</h2><br>
                         <label>PENCARIAN</label>
-                        <input type="text" placeholder="cari produk..">
+                        <input type="text" placeholder="cari produk.." id="search-bar">
                         <label>KATEGORI</label>
-                        <select>
-                            <option value="1">Semua</option>
-                            <option value="2">Gaming</option>
-                            <option value="3">Streaming</option>
-                            <option value="4">Recording</option>
-                            <option value="5">Merchendise</option>
+                        <select id="category-dropdown">
                         </select>
                         <label>URUTKAN</label>
-                        <select>
-                            <option value="1">Terpopuler</option>
-                            <option value="2">Harga Terendah</option>
-                            <option value="3">Harga Tertinggi</option>
-                            <option value="4">Terbaru</option>
-                            <option value="5">Terlama</option>
+                        <select id="sort-dropdown">
                         </select>
-                        <button type="submit" id="filter-button">CARI</button>
                     </fieldset>
                 </form>
             </aside>
             <main>
                 <ul id="products-container">
-                    <li>
-                        <img src="../img/ps5.jpg" alt="PlayStation 5" class="index-catalog-img">
-                        <a href="ps5.html">PlayStation 5</a>
-                    </li>
-                    <li>
-                        <img src="https://rondea.com/wp-content/uploads/2020/11/81202-video-review-of-the-xbox-series-x.jpg" alt="Xbox Series X" class="index-catalog-img">
-                        <a href="xboxseriesx.html">XBox Series X</a>
-                    </li>
-                    <li>
-                        <img src="https://via.placeholder.com/300">
-                        <a href="produk.html">Produk 3</a>
-                    </li>
-                    <li>
-                        <img src="https://via.placeholder.com/300">
-                        <a href="produk.html">Produk 4</a>
-                    </li>
-                    <li>
-                        <img src="https://via.placeholder.com/300">
-                        <a href="produk.html">Produk 5</a>
-                    </li>
-                    <li>
-                        <img src="https://via.placeholder.com/300">
-                        <a href="produk.html">Produk 6</a>
-                    </li>
                 </ul>
             </main>
         </div>
         <div id="page-button">
-            <a href="#" style="margin-right: 20px;">&#8249;</a>
-            <a href="#" style="margin-right: 20px;">&laquo;</a>
-            <a href="produk-2.html" style="margin-left: 20px;">&raquo;</a>
-            <a href="produk-2.html" style="margin-left: 20px;">&#8250;</a>
+            <a style="margin-right: 20px;" id="left-button">&#8249;</a>
+            <a style="margin-right: 20px;" id="farleft-button">&laquo;</a>
+            <a style="margin-left: 20px;" id="farright-button">&raquo;</a>
+            <a style="margin-left: 20px;" id="right-button">&#8250;</a>
         </div>
     </body>
     <footer>
         <a href="tel:+62 822-3200-5560">LAYANAN PELANGGAN</a>
     </footer>
+    <script src="script.js"></script>
 </html>
